@@ -106,13 +106,6 @@ The server runs on `ws://<host>:<port>` (e.g., `ws://localhost:8080`) and suppor
 kill -TERM <pid>
 ```
 
-### Running the C Client
-
-Use the provided C client to interact with the server:
-```bash
-jsonrpc_rbus_client get Device.DeviceInfo.ModelName
-```
-
 ### Supported JSON-RPC Methods
 
 The server supports the following JSON-RPC methods:
