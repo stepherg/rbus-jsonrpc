@@ -23,7 +23,7 @@
   - `libwebsockets` (WebSocket library)
   - `jansson` (JSON parsing library)
   - `openssl@3` (SSL support)
-  - `rbus` (RDK Bus library, may require a custom tap or manual installation)
+  - `rbus` (RDK Bus library, may require manual installation or will be installed as a dependency using Homebrew.
 
 On Ubuntu/Debian, install dependencies:
 ```bash
@@ -37,7 +37,7 @@ npm install ws
 
 ### Homebrew Installation (macOS/Linux)
 
-1. Create or use a Homebrew tap for `rbus-jsonrpc`:
+1. Use the Homebrew tap for `rbus-jsonrpc`:
    ```bash
    brew tap stepherg/tap
    ```
@@ -269,7 +269,7 @@ WebSocket connection closed
 
 ## Notes
 
-- **rbus Dependency**: The `rbus` library may require manual installation or a custom Homebrew tap. Contact the repository maintainers for guidance.
+- **rbus Dependency**: The `rbus` library may require manual installation or Homebrew.
 - **SSL Support**: Enable SSL in `config.json` (`"ssl_enabled": true`) for secure connections, but ensure OpenSSL certificates are configured.
 - **Event Testing**: Replace `Device.WiFi.SSID.1.Status!` with an actual event name supported by your rbus provider.
 - **Contributing**: Contributions are welcome! Submit pull requests to `https://github.com/stepherg/rbus-jsonrpc`.
